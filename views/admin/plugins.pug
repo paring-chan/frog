@@ -1,0 +1,16 @@
+extends layout
+block content
+    - const plugins = [{name: '음악', namespace: 'music'}, {name: '프로필', namespace: 'profile'}, {name: '채팅청소', namespace: 'clearChat'}, {name: '대화', namespace: 'chat'}]
+    h4 플러그인 관리
+    .card-columns
+        each plugin in plugins
+            .card.border-left-primary.h-100.py-2
+                .card-body
+                    .row.no-gutters.align-items-center
+                        span.col-10
+                            | #{plugin.name}
+                        .custom-control.custom-switch.d-inline
+                            input(type="checkbox" id='checkbox_' + plugin.namespace, data-switch=plugin.namespace checked=extensions[plugin.namespace]).custom-control-input.plugin-switch
+                            label(for='checkbox_' + plugin.namespace).custom-control-label
+
+    script(src="/js/switch.js")

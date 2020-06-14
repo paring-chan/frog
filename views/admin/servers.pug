@@ -1,0 +1,11 @@
+extends layout
+block content
+    .card-columns
+        each guild in guilds
+            a(href="/servers/"+guild.id)
+                .card.border-left-primary.shadow.h-100.py-2
+                    .card-body
+                        .row.no-gutters.align-items-center
+                            .col.mr-2
+                                .h5.mb-0.font-weight-bold.text-primary
+                                    | #{guild.name}

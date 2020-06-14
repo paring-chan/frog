@@ -1,0 +1,1 @@
+module.exports.ext_list = {음악: 'music', 프로필: 'profile', 채팅청소: 'clearChat', 경고: 'stack', 대화: 'chat'}
