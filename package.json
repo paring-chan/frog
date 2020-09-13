@@ -30,7 +30,7 @@
     "miniget": "^2.0.0",
     "mongoose": "^5.9.18",
     "morgan": "~1.9.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "node-sass-middleware": "0.11.0",
     "npm": "^6.14.5",
     "opusscript": "^0.0.7",
